@@ -2,10 +2,6 @@
   "name": "eslint-prettier-playground",
   "version": "0.1.0",
   "private": true,
-  "lint-staged": {
-    "*.{js, jsx,ts, tsx}": "eslint --fix",
-    "*": "prettier --write ."
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +13,10 @@
     "fix:lint": "next lint --fix",
     "fix:prettier": "prettier --write .",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js, jsx, ts, tsx}": "eslint --fix",
+    "*": "prettier --write ."
   },
   "dependencies": {
     "next": "14.2.3",
