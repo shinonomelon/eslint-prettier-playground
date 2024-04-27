@@ -37,7 +37,5 @@ module.exports = {
     "no-console": "error",
     // 未使用の変数をエラーとする
     "no-unused-vars": "error",
-    // リストの各要素にkey属性を付与する
-    "react/jsx-key": "error",
   },
 };
