@@ -1,6 +1,6 @@
 ## EslintとPrettierの設定
 
-Next.jsでTailwindCSSとTypeScriptで開発するときのEslintとPrettierの設定
+Next.jsでTailwindCSSとTypeScriptで開発するときのESLintとPrettierの設定
 
 ## npm scripts
 
