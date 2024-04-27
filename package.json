@@ -6,8 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write ."
+    "check": "pnpm run --parallel --aggregate-output /^check:/",
+    "check:lint": "next lint",
+    "check:prettier": "prettier --check .",
+    "fix": "pnpm run fix:lint && pnpm run fix:prettier",
+    "fix:lint": "next lint --fix",
+    "fix:prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "14.2.3",
