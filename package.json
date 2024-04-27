@@ -2,6 +2,10 @@
   "name": "eslint-prettier-playground",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "*.{js, jsx,ts, tsx}": "eslint --fix",
+    "*": "prettier --write ."
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +15,8 @@
     "check:prettier": "prettier --check .",
     "fix": "pnpm run fix:lint && pnpm run fix:prettier",
     "fix:lint": "next lint --fix",
-    "fix:prettier": "prettier --write ."
+    "fix:prettier": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -29,6 +34,8 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-tailwindcss": "^3.15.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
