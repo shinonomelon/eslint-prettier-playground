@@ -1,11 +1,7 @@
 module.exports = {
   $schema: "https://json.schemastore.org/eslintrc",
   root: true,
-  extends: [
-    "next/core-web-vitals",
-    "plugin:tailwindcss/recommended",
-    "prettier",
-  ],
+  extends: ["next/core-web-vitals", "plugin:tailwindcss/recommended", "prettier"],
   plugins: ["react", "import", "tailwindcss"],
   settings: {
     tailwindcss: {
